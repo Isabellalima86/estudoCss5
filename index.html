@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <title> .:Isabella Lima:. </title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="imagem" src="LogoISL.png" alt="Logo Isabella Lima">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/Isabellalima86"> github</a>
+            </li>
+
+            <li>
+                <a target="_blank" href="mailto:isabellalimasilva@gmail.com"> e-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/+5521984282566"> whatsapp </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Isabella Lima</h1>
+                <h5> Futura Full-stack</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                Estou iniciando na carreira de desenvolvimento Full-stack, fazendo um treinamento
+                um treimento intensivo de 2 meses. Espero logo que possível receber meu certificado 
+                e entrar nomercado de desenvolvimento Full-stack. Origada a Gama Academy e Ambev Tech pela oportunidade.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+
+                <form action="">
+                    <input type="email" placeholder="seu melhor e-mail :)">
+                    <button> enviar! </button>
+                </form>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+
+        }
+
+    </script>
+
+        <!-- <h2>Mais sobre mim</h2>
+ 
+        <div class="flex">
+           <div>
+                <img src="cachorro.jpg" alt="desenho de cachorro sentado">
+                    <p> Eu sou apaixonada por cachorros, tenho uma cachorrinha que 
+                    é SRD, o nome dela é Meg, ela é uma misturinha de Pinscher 
+                    0 com Yorkshire Mini, ela já está com 13 anos
+                    </p>
+            </div>
+                
+            <div>
+                <img src="calopsita.jpg" alt="desenho de uma calopsita fofinha">
+                    <p> Em 2020 acabei herdando uma calopsita macho, que meu sogro não pode mais cuidar
+                    partiularmente aves para mim deveriam viver na natureza livre, mas como o Nino 
+                    (este foi o nome que eu dei), sempre viveu na gaiola, não tive outra opção a não ser 
+                    ficar com ele. Mesmo com a gaiola aberta ele nunca sai, realmente espero que ele ande e 
+                    voe um pouquinho no quintal
+                    </p>
+            </div>
+
+            <div >
+                <img src="gato.jpg" alt="desenho de gato amarelo fofinho">
+                    <p> No final de 2020, entrou uma gata amarela na minha loja e se escondeu, tentei encontrar, mas
+                    ela foi muito esperta, então imaginei que ele havia saido. O que eu não esperava era que em dezembro de 2020,
+                    ela teria 5 filhotes. Quando cheguei na minha loja via a gata e seus 5 filhotinhos, então eu e meu esposo resolvemos cuidar
+                    compramos tudo e mantivemos ela e os bbs, levamos ao veterinário etc. Porém em abril de 2021, colocamos para doação todos eles, 
+                    conseguimos doar todos, porém um dos filhos um gatinho todo amarelinho e com os olhos amarelinho sumiu, no meio da loja e ninguém achava.
+                    Fiquei super preocupada, mas pensei que ele havia fugido. Quando achei que não reencontrei o gatinho entre as divisórias da loja,  bem fraquinho
+                    então meu coração partiu e eu cuidei dele mais uma vez, deixei ele forte e acabei adontando e levando para casa dei o nome de TOM e hoje em dia 
+                    ele faz parte da nossa família, ele virou irmão da MEG (cachorrinha de 13 anos) e do NINO (calopsita de 4 anos).  
+                    </p>
+            </div>
+        </div>
+  -->
+
+
+    
+</body>
+</html>

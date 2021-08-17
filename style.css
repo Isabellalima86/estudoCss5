@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:#d9ad26;
+    font-family: 'poppins' , sans-serif;
+    
+    /* color:rgb(209, 175, 24) */
+    }
+
+    #imagem {
+        width: 100px; }
+
+    
+    
+    ul {
+        list-style: none;
+        font-style: italic;
+        font-size: 13;
+   
+
+    }
+
+    a { 
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    body {
+        /* background-image: url(fundo.png);
+        background-repeat: no-repeat;
+        background-position: center center fixed; */
+        
+        background: url(./fundo.png) no-repeat center center fixed;
+        background-size: cover;
+
+        /* background-color: #0f2027; */
+        /* background: linear-gradient(90deg, #ea4567, #981276); */
+    }
+
+    header {
+        display: flex ;
+        justify-content:space-around;
+        align-items: center;
+        padding: 6px ;
+        /* border-bottom: 2px solid #000; */
+        box-shadow: 1px 1px 10px 1px #000 ;
+        /* border-bottom: 15px ridge #000; */
+        margin-bottom: 45px;
+    }
+
+    header ul {
+        display: flex ;
+    }
+
+     header ul li{
+        padding: 5px;
+        border-right: 2px dashed #000;
+    }
+
+    header ul li:first-child{
+        border-left: 2px dashed #000;
+    }
+    
+    header ul li a:hover{
+        transition: 300ms
+    }
+        
+    header ul li a:hover{
+        color: #000;
+        text-decoration: underline;
+    }
+
+
+
+    .container {
+        text-align: center;
+            }
+    .container .name h1 {
+        font-size: 200px;
+        text-align: justify;
+        
+    }
+
+    .container .name h5 {
+        font-size: 30px;
+    }
+
+    #arrow {
+        font-size: 40px;
+        cursor : pointer;
+        animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+        to { 
+            visibility: hidden;
+        }
+        
+    }
+
+    #animation {
+        transition: 300ms;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+        transition: 300ms;
+    }
+
+    .active { 
+        display: block !important;
+
+    }
+
+    #about {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #about p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+     .form{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+        /* border: thick double #000;
+        padding: 5px; */
+    }
+
+    .form input{
+        width: 50%;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px 0px 0px 5px; ;
+    }
+    .form button {
+        width: 15%;
+        padding: 5px 10px;
+       
+        /* background-color: #000; */
+       
+        background: linear-gradient(to right, #000 50%, #d9ad26 50% );
+        background-size: 200% 100%;
+        background-position: right bottom;
+
+        color: #000;
+        font-weight: 600;
+        border:none;
+        cursor: pointer;
+        
+        /* transition: 300ms; */
+        
+        transition: all 300ms ease-out;
+        border-radius: 0px 5px 5px 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -5px;
+    }
+
+    .form button:hover {
+        background-position:left bottom;
+        color: #d9ad26;
+    }
+
+    .form p {
+        font-weight: bolder;
+        text-shadow: 0px 2px 3px rgb(7, 7, 7);
+    } 
+
+    /* Iniciando o desafio */
+
+    /* .flex {
+        display: flex; */
+        /* justify-content: space-evenly;
+        align-items: center; */
+    /* }
+    .flex div{
+        border: 2px solid #000;
+        margin: 15px;
+        flex-basis: 100%;
+        background-color: rgb(235, 224, 209);
+    }
+    
+    .flex img {
+        max-width: 250px;
+        border: 2px solid #000;
+        margin: 15px;
+    }
+    
+    /* body { 
+        background-image: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    } */
+     /* p{
+        text-align: justify;
+        margin: 0px 12px 8px 12px;
+        width: 250px;
+    }  */
+    
+    /* h2{
+        font-size: 20px;
+        /* font-weight: bolder; */
+        /* font-style: italic;
+        text-align: center;
+        font-family: 'Style Script', cursive;
+    }    */
+
+    @media only screen and (max-width: 768px){
+        .form{
+            width: 110%;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .container .name h1 {
+            font-size: 30px;
+
+        }
+        .container .name h5 {
+            font-size: 15px;
+
+        }
+
+        #about p {
+            max-width: 80%;
+        }
+    }
+        
